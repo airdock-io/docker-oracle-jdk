@@ -1,7 +1,7 @@
 # VERSION 1.0
 # AUTHOR:         Jerome Guibert <jguibert@gmail.com>
 # DESCRIPTION:    Oracle Java 7
-# TO_BUILD:       docker build --rm -t airdock/oracle-jdk7 .
+# TO_BUILD:       docker build --rm -t airdock/oracle-jdk:1.7 .
 # SOURCE:         https://github.com/airdock-io/docker-oracle-jdk
 
 # Pull base image.
