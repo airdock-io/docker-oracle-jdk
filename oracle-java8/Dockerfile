@@ -1,7 +1,7 @@
 # VERSION 1.0
 # AUTHOR:         Jerome Guibert <jguibert@gmail.com>
 # DESCRIPTION:    Oracle Java 8
-# TO_BUILD:       docker build --rm -t airdock/oracle-jdk8 .
+# TO_BUILD:       docker build --rm -t airdock/oracle-jdk:1.8 .
 # SOURCE:         https://github.com/airdock-io/docker-oracle-jdk
 
 # Pull base image.
@@ -21,7 +21,7 @@ RUN echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" | te
     rm -rf /var/cache/oracle-java8-installer  && \
     apt-get clean  && \
     rm -rf /var/lib/apt/lists/*
-  
+
 
 # Define working directory.
 WORKDIR /data
@@ -31,4 +31,3 @@ ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
 
 # Define default command.
 CMD ["/bin/bash"]
-

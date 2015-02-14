@@ -5,7 +5,7 @@ Docker Image for Oracle Java 8 and 7 based on airdock/base:latest
 This repository contains **Dockerfile** for [Docker](https://www.docker.com/)'s [automated build](https://registry.hub.docker.com/u/airdock/) published to the public [Docker Hub Registry](https://registry.hub.docker.com/).
 
 
-> Name: airdock/oracle-jdk8 and airdock/oracle-jdk7
+> Name: airdock/oracle-jdk:1.8 (or airdock/oracle-jdk:latest) and airdock/oracle-jdk:1.7
 
 **Dependency**: airdock/base:latest
 
@@ -13,22 +13,30 @@ This repository contains **Dockerfile** for [Docker](https://www.docker.com/)'s 
 
  - [Docker Java Image](https://github.com/dockerfile/java)
 
+
 # Usage
 
 1. You should have already install [Docker](https://www.docker.com/) and [Fig](http://www.fig.sh/) for more complex usage.
 2. Download [automated build](https://registry.hub.docker.com/u/airdock/) from public [Docker Hub Registry](https://registry.hub.docker.com/):
 `docker search airdock` or go directly in 3.
 3. Execute:
-	'docker run -t -i  airdock/oracle-jdk8:latest java -version'
+	'docker run -t -i  airdock/oracle-jdk:1.8 java -version'
 
 
 
 # Change Log
 
-## latest (current)
+## Tag 1.8 and latest (current)
 
 - add webupd8team key
-- add oracle jdk 7/8
+- add oracle jdk 8
+- declare JAVA_HOME
+- use Expat/MIT license
+
+## Tag: 1.7
+
+- add webupd8team key
+- add oracle jdk 7
 - declare JAVA_HOME
 - use Expat/MIT license
 
