@@ -9,7 +9,6 @@ FROM airdock/base:latest
 
 MAINTAINER Jerome Guibert <jguibert@gmail.com>
 
-
 # add webupd8 repository and Oracle JDK 8
 RUN echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" | tee /etc/apt/sources.list.d/webupd8team-java.list  && \
     echo "deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" | tee -a /etc/apt/sources.list.d/webupd8team-java.list  && \
@@ -25,3 +24,6 @@ RUN echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" | te
 
 # Define commonly used JAVA_HOME variable
 ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
+
+# Define default command.
+CMD [ "/bin/bash", "-l"]
