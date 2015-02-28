@@ -16,10 +16,12 @@ This repository contains **Dockerfile** for [Docker](https://www.docker.com/)'s 
 
 # Usage
 
-1. You should have already install [Docker](https://www.docker.com/) and [Fig](http://www.fig.sh/) for more complex usage.
-2. Download [automated build](https://registry.hub.docker.com/u/airdock/) from public [Docker Hub Registry](https://registry.hub.docker.com/):
+You should have already install [Docker](https://www.docker.com/) and [Fig](http://www.fig.sh/) for more complex usage.
+Download [automated build](https://registry.hub.docker.com/u/airdock/) from public [Docker Hub Registry](https://registry.hub.docker.com/):
 `docker search airdock` or go directly in 3.
-3. Execute:
+
+Execute:
+
 	'docker run -t -i  airdock/oracle-jdk:1.8 java -version'
 
 
@@ -51,7 +53,7 @@ In root makefile, you could retrieve two task:
 - **clean**: clean all sub project
 
 
-In each sub project Makefile, you could retreive this *variables*:
+In each sub project Makefile, you could retrieve this *variables*:
 
 - NAME: declare a full image name (aka airdock/oracle-jdk8)
 - VERSION: declare image version
@@ -61,8 +63,8 @@ And *tasks*:
 - **all**: alias to 'build'
 - **clean**: remove all container which depends on this image, and remove image previously builded
 - **build**: clean and build the current version
-- **tag_latest**: build and tag current version with ":latest"
-- **release**: execute tag_latest, push image onto registry, and tag git repository
+- **tag_latest**: tag current version with ":latest"
+- **release**: build and execute tag_latest, push image onto registry, and tag git repository
 - **debug**: launch default command with builded image in interactive mode
 - **run**: run image as daemon and print IP address.
 
