@@ -18,11 +18,8 @@ RUN echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" | te
     echo debconf shared/accepted-oracle-license-v1-1 seen true | debconf-set-selections  && \
     apt-get install -y --force-yes oracle-java7-installer oracle-java7-set-default  && \
     rm -rf /var/cache/oracle-jdk7-installer  && \
-    apt-get clean  && \
-    rm -rf /var/lib/apt/lists/*
+    /root/post-install
 
 # Define commonly used JAVA_HOME variable
 ENV JAVA_HOME /usr/lib/jvm/java-7-oracle
 
-# Define default command.
-CMD [ "/bin/bash", "-l"]
