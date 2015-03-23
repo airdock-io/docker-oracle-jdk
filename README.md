@@ -25,11 +25,18 @@ Execute:
 	'docker run -t -i  airdock/oracle-jdk:1.8 java -version'
 
 
+You can run your java application with java:java user (define in airdock/base) :
+
+	gosu java:java java -jar /var/lib/java/myapplication.jar
+
+
+
 
 # Change Log
 
 ## Tag 1.8 and latest (current)
 
+- add java:java user
 - add webupd8team key
 - add oracle jdk 8
 - declare JAVA_HOME
@@ -37,6 +44,7 @@ Execute:
 
 ## Tag: 1.7
 
+- add java:java user
 - add webupd8team key
 - add oracle jdk 7
 - declare JAVA_HOME
