@@ -2,8 +2,6 @@
 
 Docker Image for Oracle Java 8 and 7 based on airdock/base:latest
 
-This repository contains **Dockerfile** for [Docker](https://www.docker.com/)'s [automated build](https://registry.hub.docker.com/u/airdock/) published to the public [Docker Hub Registry](https://registry.hub.docker.com/).
-
 
 > Name: airdock/oracle-jdk:1.8 (or airdock/oracle-jdk:latest) and airdock/oracle-jdk:1.7
 
@@ -16,9 +14,7 @@ This repository contains **Dockerfile** for [Docker](https://www.docker.com/)'s 
 
 # Usage
 
-You should have already install [Docker](https://www.docker.com/) and [Fig](http://www.fig.sh/) for more complex usage.
-Download [automated build](https://registry.hub.docker.com/u/airdock/) from public [Docker Hub Registry](https://registry.hub.docker.com/):
-`docker search airdock` or go directly in 3.
+You should have already install [Docker](https://www.docker.com/).
 
 Execute:
 
@@ -40,7 +36,7 @@ You can run your java application with java:java user (define in airdock/base) :
 - add webupd8team key
 - add oracle jdk 8
 - declare JAVA_HOME
-- use Expat/MIT license
+- use MIT license
 
 ## Tag: 1.7
 
@@ -48,57 +44,39 @@ You can run your java application with java:java user (define in airdock/base) :
 - add webupd8team key
 - add oracle jdk 7
 - declare JAVA_HOME
-- use Expat/MIT license
+- use MIT license
 
 # Build
 
-You can build an image from  [Dockerfile](https://github.com/airdock-io/docker-base).
-You can install "make" utility, and execute: `make build`
 
-In root makefile, you could retrieve two task:
+- Install "make" utility, and execute: `make build`
+- Or execute: 'docker build -t airdock/oracle-jdk8:latest --rm .'
 
-- **build**: build all sub project
-- **clean**: clean all sub project
+See [Docker Project Tree](https://github.com/airdock-io/docker-base/wiki/Docker-Project-Tree) for more details.
 
 
-In each sub project Makefile, you could retrieve this *variables*:
-
-- NAME: declare a full image name (aka airdock/oracle-jdk8)
-- VERSION: declare image version
-
-And *tasks*:
-
-- **all**: alias to 'build'
-- **clean**: remove all container which depends on this image, and remove image previously builded
-- **build**: clean and build the current version
-- **tag_latest**: tag current version with ":latest"
-- **release**: build and execute tag_latest, push image onto registry, and tag git repository
-- **debug**: launch default command with builded image in interactive mode
-- **run**: run image as daemon and print IP address.
-
-
-
-# License
+# MIT License
 
 ```
- Copyright (c) 1998, 1999, 2000 Thai Open Source Software Center Ltd
+The MIT License (MIT)
 
- Permission is hereby granted, free of charge, to any person obtaining
- a copy of this software and associated documentation files (the
- "Software"), to deal in the Software without restriction, including
- without limitation the rights to use, copy, modify, merge, publish,
- distribute, sublicense, and/or sell copies of the Software, and to
- permit persons to whom the Software is furnished to do so, subject to
- the following conditions:
+Copyright (c) 2015 Airdock.io
 
- The above copyright notice and this permission notice shall be included
- in all copies or substantial portions of the Software.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
- EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
- MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
- IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
- CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
- TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
- SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
- ```
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+```
