@@ -30,6 +30,7 @@ Execute:
 
 ## Tag 1.8 and latest (current)
 
+- add java-dynamic-memory-opts utility script
 - add webupd8team key
 - add oracle jdk 8
 - declare JAVA_HOME
