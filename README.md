@@ -2,6 +2,8 @@
 
 Docker Image for Oracle Java 8 and 7 based on airdock/base:latest
 
+This repository contains **Dockerfile** for [Docker](https://www.docker.com/)'s [automated build](https://registry.hub.docker.com/u/airdock/) published to the public [Docker Hub Registry](https://registry.hub.docker.com/).
+
 
 > Name: airdock/oracle-jdk:1.8 (or airdock/oracle-jdk:latest) and airdock/oracle-jdk:1.7
 
@@ -32,6 +34,7 @@ You can run your java application with java:java user (define in airdock/base) :
 
 ## Tag 1.8 and latest (current)
 
+- add java-dynamic-memory-opts utility script
 - add java:java user
 - add webupd8team key
 - add oracle jdk 8

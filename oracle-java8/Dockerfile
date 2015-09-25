@@ -21,3 +21,9 @@ RUN echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" | te
 
 # Define commonly used JAVA_HOME variable
 ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
+
+# Add java dynamic memory script
+COPY java-dynamic-memory-opts /srv/java/
+
+# Add /srv/java on PATH variable
+ENV PATH ${PATH}:${JAVA_HOME}/bin:/srv/java
