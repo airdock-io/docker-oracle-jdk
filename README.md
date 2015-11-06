@@ -1,5 +1,4 @@
-[![](https://badge.imagelayers.io/airdock/oracle-jdk:latest.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:latest 'Get your own badge on imagelayers.io')
-# Oracle Java
+# Oracle Java [![](https://badge.imagelayers.io/airdock/oracle-jdk:latest.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:latest 'Get your own badge on imagelayers.io')
 
 Docker Image for Oracle Java 8 and 7 based on airdock/base:latest
 
