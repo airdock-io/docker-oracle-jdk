@@ -13,21 +13,21 @@ This repository contains **Dockerfile** for [Docker](https://www.docker.com/)'s 
 
 ## Supported Version
 
- > [airdock/oracle-jdk:latest](https://github.com/airdock-io/docker-oracle-jdk/tree/master/) (jdk-8u66)
- > [airdock/oracle-jdk:1.8](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-1.8) (jdk-8u66)
- > [airdock/oracle-jdk:1.7](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-1.7) (jdk-8u66)
+ > [airdock/oracle-jdk:latest](https://github.com/airdock-io/docker-oracle-jdk/tree/master/) (jdk-8u66) [![](https://badge.imagelayers.io/airdock/oracle-jdk:latest.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:latest 'Get your own badge on imagelayers.io')
+ > [airdock/oracle-jdk:1.8](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-1.8) (jdk-8u66) [![](https://badge.imagelayers.io/airdock/oracle-jdk:1.8.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:1.8 'Get your own badge on imagelayers.io')
+ > [airdock/oracle-jdk:1.7](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-1.7) (jdk-8u66) [![](https://badge.imagelayers.io/airdock/oracle-jdk:1.7.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:1.7 'Get your own badge on imagelayers.io')
 
 
- - [airdock/oracle-jdk:jdk-8u66](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u66)
- - [airdock/oracle-jdk:jdk-8u65](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u65)
- - [airdock/oracle-jdk:jdk-8u60](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u60)
- - [airdock/oracle-jdk:jdk-8u51](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u51)
- - [airdock/oracle-jdk:jdk-8u45](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u45)
- - [airdock/oracle-jdk:jdk-8u40](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u40)
- - [airdock/oracle-jdk:jdk-8u31](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u31)
- - [airdock/oracle-jdk:jdk-8u25](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u25)
- - [airdock/oracle-jdk:jdk-7u80](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-7u80)
- - [airdock/oracle-jdk:jdk-7u79](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-7u79)
+ - [airdock/oracle-jdk:jdk-8u66](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u66) [![](https://badge.imagelayers.io/airdock/oracle-jdk:jdk-8u66.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:jdk-8u66 'Get your own badge on imagelayers.io')
+ - [airdock/oracle-jdk:jdk-8u65](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u65) [![](https://badge.imagelayers.io/airdock/oracle-jdk:jdk-8u65.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:jdk-8u65 'Get your own badge on imagelayers.io')
+ - [airdock/oracle-jdk:jdk-8u60](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u60) [![](https://badge.imagelayers.io/airdock/oracle-jdk:jdk-8u60.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:jdk-8u60 'Get your own badge on imagelayers.io')
+ - [airdock/oracle-jdk:jdk-8u51](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u51) [![](https://badge.imagelayers.io/airdock/oracle-jdk:jdk-8u51.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:jdk-8u51 'Get your own badge on imagelayers.io')
+ - [airdock/oracle-jdk:jdk-8u45](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u45) [![](https://badge.imagelayers.io/airdock/oracle-jdk:jdk-8u45.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:jdk-8u45 'Get your own badge on imagelayers.io')
+ - [airdock/oracle-jdk:jdk-8u40](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u40) [![](https://badge.imagelayers.io/airdock/oracle-jdk:jdk-8u40.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:jdk-8u40 'Get your own badge on imagelayers.io')
+ - [airdock/oracle-jdk:jdk-8u31](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u31) [![](https://badge.imagelayers.io/airdock/oracle-jdk:jdk-8u31.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:jdk-8u31 'Get your own badge on imagelayers.io')
+ - [airdock/oracle-jdk:jdk-8u25](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u25) [![](https://badge.imagelayers.io/airdock/oracle-jdk:jdk-8u25.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:jdk-8u25 'Get your own badge on imagelayers.io')
+ - [airdock/oracle-jdk:jdk-7u80](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-7u80) [![](https://badge.imagelayers.io/airdock/oracle-jdk:jdk-7u80.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:jdk-7u80 'Get your own badge on imagelayers.io')
+ - [airdock/oracle-jdk:jdk-7u79](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-7u79) [![](https://badge.imagelayers.io/airdock/oracle-jdk:jdk-7u79.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:jdk-7u79 'Get your own badge on imagelayers.io')
 
 
 
