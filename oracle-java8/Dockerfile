@@ -1,26 +1,29 @@
-# VERSION 1.1
+# VERSION 1.0
 # AUTHOR:         Jerome Guibert <jguibert@gmail.com>
-# DESCRIPTION:    Oracle Java 8u66
-# TO_BUILD:       make build
-# SOURCE:         https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u66
+# DESCRIPTION:    Oracle Java 8
+# TO_BUILD:       docker build --rm -t airdock/oracle-jdk:1.8 .
+# SOURCE:         https://github.com/airdock-io/docker-oracle-jdk
 
+# Pull base image.
 FROM airdock/base:latest
+
 MAINTAINER Jerome Guibert <jguibert@gmail.com>
+
+# add webupd8 repository and Oracle JDK 8
+RUN echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" | tee /etc/apt/sources.list.d/webupd8team-java.list  && \
+    echo "deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" | tee -a /etc/apt/sources.list.d/webupd8team-java.list  && \
+    apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EEA14886  && \
+    apt-get update -qq && \
+    echo debconf shared/accepted-oracle-license-v1-1 select true | debconf-set-selections  && \
+    echo debconf shared/accepted-oracle-license-v1-1 seen true | debconf-set-selections  && \
+    apt-get install -y --force-yes oracle-java8-installer oracle-java8-set-default  && \
+    /root/post-install
+
+# Define commonly used JAVA_HOME variable
+ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
 
 # Add java dynamic memory script
 COPY java-dynamic-memory-opts /srv/java/
 
-# Install Oracle JDK 8u66
-RUN cd /srv/java && \
-    curl -L -O -H "Cookie: oraclelicense=accept-securebackup-cookie" -k "http://download.oracle.com/otn-pub/java/jdk/8u66-b17/jdk-8u66-linux-x64.tar.gz" && \
-    tar xvf jdk-8u66-linux-x64.tar.gz -C /srv/java && \
-    rm -f jdk-8u66-linux-x64.tar.gz && \
-    ln -s /srv/java/jdk1.* /srv/java/jdk && \
-    chown -R java:java /srv/java && \
-    /root/post-install
-
-# Define commonly used JAVA_HOME variable
-ENV JAVA_HOME /srv/java/jdk
-
-# Add /srv/java and jdk on PATH variable
+# Add /srv/java on PATH variable
 ENV PATH ${PATH}:${JAVA_HOME}/bin:/srv/java
