@@ -3,9 +3,9 @@ NAME = oracle-jdk
 FULLNAME = $(NAMESPACE)/$(NAME)
 VERSION = 8u51
 
-.PHONY: all clean build tag_latest release debug run save
+.PHONY: all clean build tag_latest release debug run save start usage
 
-all: build
+all: usage build
 
 clean:
 	@CID=$(docker ps -a | awk '{ print $$1 " " $$2 }' | grep $(FULLNAME) | awk '{ print $$1 }'); if [ ! -z "$$CID" ]; then echo "Removing container which reference $(FULLNAME)"; for container in $(CID); do docker rm -f $$container; done; fi;
@@ -36,3 +36,19 @@ save:
 
 run:
 	@echo "IPAddress =" $$(docker inspect --format '{{.NetworkSettings.IPAddress}}' $$(docker run -d $(FULLNAME):$(VERSION)))
+
+start:
+	@docker-machine start default
+	@eval "$(docker-machine env default)"
+
+usage:
+	@echo "List of target"
+	@echo "all (default): print usage and build"
+	@echo "clean:         remove containers and image"
+	@echo "build:         build docker image"
+	@echo "tag_latest:    build and tag image with 'latest'"
+	@echo "debug:         launch a shell with this image"
+	@echo "save:          export this image"
+	@echo "run:           launch this image with inner command"
+	@echo "start:         start docker machine"
+	@echo "usage:         this help"
