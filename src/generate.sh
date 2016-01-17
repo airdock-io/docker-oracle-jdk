@@ -66,9 +66,9 @@ generateReadMe() {
     readme=""
     NL="NEWLINE"
     # special tag
-    readme="${readme} > [${FULLNAME}:latest](https://github.com/airdock-io/docker-oracle-jdk/tree/master/) (${LATEST_VERSION}) [![](https://badge.imagelayers.io/airdock/oracle-jdk:latest.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:latest 'Get your own badge on imagelayers.io')${NL}"
-    readme="${readme} > [${FULLNAME}:1.8](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-1.8) (${TAG_JAVA_8}) [![](https://badge.imagelayers.io/airdock/oracle-jdk:1.8.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:1.8 'Get your own badge on imagelayers.io')${NL}"
-    readme="${readme} > [${FULLNAME}:1.7](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-1.7) (${TAG_JAVA_8}) [![](https://badge.imagelayers.io/airdock/oracle-jdk:1.7.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:1.7 'Get your own badge on imagelayers.io')${NL}${NL}${NL}"
+    readme="${readme} > [${FULLNAME}:latest](https://github.com/airdock-io/docker-oracle-jdk/tree/master/) (${LATEST_VERSION}) [![](https://badge.imagelayers.io/airdock/oracle-jdk:latest.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:latest 'Get your own badge on imagelayers.io')${NL}${NL}"
+    readme="${readme} - [${FULLNAME}:1.8](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-1.8) (${TAG_JAVA_8}) [![](https://badge.imagelayers.io/airdock/oracle-jdk:1.8.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:1.8 'Get your own badge on imagelayers.io')${NL}${NL}"
+    readme="${readme} - [${FULLNAME}:1.7](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-1.7) (${TAG_JAVA_8}) [![](https://badge.imagelayers.io/airdock/oracle-jdk:1.7.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:1.7 'Get your own badge on imagelayers.io')${NL}${NL}${NL}"
     # Version
     for supported_version in $VERSION_LIST; do
         folder=$(basename $supported_version)
