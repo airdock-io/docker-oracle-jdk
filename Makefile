@@ -119,4 +119,11 @@ footer:
 	@echo "----------------------------------------"
 	@echo
 
-.PHONY: info $(INFO_VERSION) generate clean_generate $(GENERATE_VERSION) build $(BUILD_VERSION) clean $(CLEAN_VERSION) read $(READ_VERSION) header footer
+# ----------------------------------------
+# Start default docker machine
+#
+start:
+	@docker-machine start default
+	@eval "$(docker-machine env default)"
+
+.PHONY: info $(INFO_VERSION) generate clean_generate $(GENERATE_VERSION) build $(BUILD_VERSION) clean $(CLEAN_VERSION) read $(READ_VERSION) header footer start
