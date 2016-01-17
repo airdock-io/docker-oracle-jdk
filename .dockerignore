@@ -1,1 +1,8 @@
 .git
+.idea
+*.md
+*.log
+Makefile
+LICENSE
+.ebextensions
+src

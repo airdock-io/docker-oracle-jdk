@@ -1,3 +1,3 @@
 # Oracle Java
 
-Docker Image for Oracle Java 8 and 7 
+Docker Image for Oracle Java SDK 

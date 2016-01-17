@@ -1,7 +1,7 @@
 NAMESPACE = airdock
 NAME = oracle-jdk
 FULLNAME = $(NAMESPACE)/$(NAME)
-VERSION = 1.8
+VERSION = 7u79
 
 .PHONY: all clean build tag_latest release debug run save
 
@@ -21,7 +21,7 @@ tag_latest:
 	@docker tag $(FULLNAME):$(VERSION) $(FULLNAME):latest
 
 release: build tag_latest
-	docker push $(NAME)
+	docker push $(FULLNAME)
 	@echo "Create a tag v-$(VERSION)"
 	@git tag v-$(VERSION)
 	@git push origin v-$(VERSION)
