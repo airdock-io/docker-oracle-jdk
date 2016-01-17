@@ -70,6 +70,7 @@ $(GENERATE_VERSION):
 	echo Generate $$VERSION; \
 	mkdir -p $$FOLDER; \
 	cp -R src/docker/* $$FOLDER; \
+	cp src/docker/.dockerignore $$FOLDER; \
 	for template in src/template/*; do \
 		target=$${template##*/}; \
 		sed -e "s;%NAMESPACE%;$(NAMESPACE);g" -e "s;%NAME%;$(NAME);g" \
