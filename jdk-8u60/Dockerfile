@@ -1,8 +1,8 @@
 # VERSION 1.1
 # AUTHOR:         Jerome Guibert <jguibert@gmail.com>
-# DESCRIPTION:    Oracle Java 8u66
+# DESCRIPTION:    Oracle Java 8u60
 # TO_BUILD:       make build
-# SOURCE:         https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u66
+# SOURCE:         https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u60
 
 FROM airdock/base:latest
 MAINTAINER Jerome Guibert <jguibert@gmail.com>
@@ -10,11 +10,11 @@ MAINTAINER Jerome Guibert <jguibert@gmail.com>
 # Add java dynamic memory script
 COPY java-dynamic-memory-opts /srv/java/
 
-# Install Oracle JDK 8u66
+# Install Oracle JDK 8u60
 RUN cd /srv/java && \
-    curl -L -O -H "Cookie: oraclelicense=accept-securebackup-cookie" -k "http://download.oracle.com/otn-pub/java/jdk/8u66-b17/jdk-8u66-linux-x64.tar.gz" && \
-    tar xvf jdk-8u66-linux-x64.tar.gz -C /srv/java && \
-    rm -f jdk-8u66-linux-x64.tar.gz && \
+    curl -L -O -H "Cookie: oraclelicense=accept-securebackup-cookie" -k "http://download.oracle.com/otn-pub/java/jdk/8u60-b27/jdk-8u60-linux-x64.tar.gz" && \
+    tar xvf jdk-8u60-linux-x64.tar.gz -C /srv/java && \
+    rm -f jdk-8u60-linux-x64.tar.gz && \
     ln -s /srv/java/jdk1.* /srv/java/jdk && \
     chown -R java:java /srv/java && \
     /root/post-install

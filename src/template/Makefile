@@ -1,7 +1,7 @@
-NAMESPACE = airdock
-NAME = oracle-jdk
+NAMESPACE = %NAMESPACE%
+NAME = %NAME%
 FULLNAME = $(NAMESPACE)/$(NAME)
-VERSION = 8u66
+VERSION = %VERSION%
 
 .PHONY: all clean build tag_latest release debug run save start usage
 
