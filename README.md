@@ -17,7 +17,7 @@ This repository contains **Dockerfile** for [Docker](https://www.docker.com/)'s 
 
  - [airdock/oracle-jdk:1.8](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-1.8) (jdk-8u66) [![](https://badge.imagelayers.io/airdock/oracle-jdk:1.8.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:1.8 'Get your own badge on imagelayers.io')
 
- - [airdock/oracle-jdk:1.7](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-1.7) (jdk-8u66) [![](https://badge.imagelayers.io/airdock/oracle-jdk:1.7.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:1.7 'Get your own badge on imagelayers.io')
+ - [airdock/oracle-jdk:1.7](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-1.7) (jdk-7u80) [![](https://badge.imagelayers.io/airdock/oracle-jdk:1.7.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:1.7 'Get your own badge on imagelayers.io')
 
 
  - [airdock/oracle-jdk:jdk-8u66](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u66) [![](https://badge.imagelayers.io/airdock/oracle-jdk:jdk-8u66.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:jdk-8u66 'Get your own badge on imagelayers.io')
@@ -47,7 +47,7 @@ Please note that a correct docker command should be something like this one (usi
  CMD [ "gosu", "java:java", "/srv/java/jdk/bin/java", ... ]
 ```
 
-JVM uses only 1/4 of system memory by default, with script java-dynamic-memory-opts, 
+JVM uses only 1/4 of system memory by default, with script java-dynamic-memory-opts,
 you could set a specific percent of memory (80 % per default) :
 
 ```
@@ -63,7 +63,7 @@ If you using this script take care of your host sizing.
 ### 1.1
 
 - add specific tag on SDK version
-- add build process to generate all JDK version target 
+- add build process to generate all JDK version target
 - add JAVA_HOME/bin in PATH, java-dynamic-memory-opts utility script for all version
 - Use tarball from Oracle in order to install JDK
 - JDK HOME is bellow /srv/java/jdk
