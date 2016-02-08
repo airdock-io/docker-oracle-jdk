@@ -17,9 +17,11 @@ This repository contains **Dockerfile** for [Docker](https://www.docker.com/)'s 
 
 ###Latest tag per version and type
  - [airdock/oracle-jdk:1.8](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-1.8) (jdk-8u66) [![](https://badge.imagelayers.io/airdock/oracle-jdk:1.8.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:1.8 'Get your own badge on imagelayers.io')
- - [airdock/oracle-jdk:jre-1.8](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jre-1.8) (jre-8u66) [![](https://badge.imagelayers.io/airdock/oracle-jdk:1.8.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:1.8 'Get your own badge on imagelayers.io')
- - [airdock/oracle-jdk:1.7](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-1.7) (jdk-7u80) [![](https://badge.imagelayers.io/airdock/oracle-jdk:1.7.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:1.7 'Get your own badge on imagelayers.io')
- - [airdock/oracle-jdk:jre-1.7](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jre-1.7) (jre-7u80) [![](https://badge.imagelayers.io/airdock/oracle-jdk:1.7.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:1.7 'Get your own badge on imagelayers.io')
+ - [airdock/oracle-jdk:jdk-1.8](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-1.8) (jdk-8u66) [![](https://badge.imagelayers.io/airdock/oracle-jdk:jdk-1.8.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:jdk-1.8 'Get your own badge on imagelayers.io')
+ - [airdock/oracle-jdk:jre-1.8](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jre-1.8) (jre-8u66) [![](https://badge.imagelayers.io/airdock/oracle-jdk:jre-1.8.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:jre-1.8 'Get your own badge on imagelayers.io')
+ - [airdock/oracle-jdk:1.7](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-1.7) (jdk-8u66) [![](https://badge.imagelayers.io/airdock/oracle-jdk:1.7.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:1.7 'Get your own badge on imagelayers.io')
+ - [airdock/oracle-jdk:jdk-1.7](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-1.7) (jdk-7u80) [![](https://badge.imagelayers.io/airdock/oracle-jdk:jdk-1.7.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:jdk-1.7 'Get your own badge on imagelayers.io')
+ - [airdock/oracle-jdk:jre-1.7](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jre-1.7) (jre-7u80) [![](https://badge.imagelayers.io/airdock/oracle-jdk:jre-1.7.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:jre-1.7 'Get your own badge on imagelayers.io')
 
 
 ###Specific version
