@@ -1,7 +1,7 @@
 # Oracle Java [![](https://badge.imagelayers.io/airdock/oracle-jdk:latest.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:latest 'Get your own badge on imagelayers.io')
 
 
-Docker Image for Oracle Java SDK based on airdock/base:latest
+Docker Image for Oracle Java SDK (JDK and JRE) based on airdock/base:latest
 
 This repository contains **Dockerfile** for [Docker](https://www.docker.com/)'s [automated build](https://registry.hub.docker.com/u/airdock/) published to the public [Docker Hub Registry](https://registry.hub.docker.com/).
 
@@ -15,11 +15,14 @@ This repository contains **Dockerfile** for [Docker](https://www.docker.com/)'s 
 
  > [airdock/oracle-jdk:latest](https://github.com/airdock-io/docker-oracle-jdk/tree/master/) (jdk-8u66) [![](https://badge.imagelayers.io/airdock/oracle-jdk:latest.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:latest 'Get your own badge on imagelayers.io')
 
+###Latest tag per version and type
  - [airdock/oracle-jdk:1.8](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-1.8) (jdk-8u66) [![](https://badge.imagelayers.io/airdock/oracle-jdk:1.8.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:1.8 'Get your own badge on imagelayers.io')
+ - [airdock/oracle-jdk:jre-1.8](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jre-1.8) (jre-8u66) [![](https://badge.imagelayers.io/airdock/oracle-jdk:1.8.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:1.8 'Get your own badge on imagelayers.io')
+ - [airdock/oracle-jdk:1.7](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-1.7) (jdk-7u80) [![](https://badge.imagelayers.io/airdock/oracle-jdk:1.7.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:1.7 'Get your own badge on imagelayers.io')
+ - [airdock/oracle-jdk:jre-1.7](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jre-1.7) (jre-7u80) [![](https://badge.imagelayers.io/airdock/oracle-jdk:1.7.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:1.7 'Get your own badge on imagelayers.io')
 
- - [airdock/oracle-jdk:1.7](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-1.7) (jdk-8u66) [![](https://badge.imagelayers.io/airdock/oracle-jdk:1.7.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:1.7 'Get your own badge on imagelayers.io')
 
-
+###Specific version
  - [airdock/oracle-jdk:jdk-8u66](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u66) [![](https://badge.imagelayers.io/airdock/oracle-jdk:jdk-8u66.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:jdk-8u66 'Get your own badge on imagelayers.io')
  - [airdock/oracle-jdk:jdk-8u65](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u65) [![](https://badge.imagelayers.io/airdock/oracle-jdk:jdk-8u65.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:jdk-8u65 'Get your own badge on imagelayers.io')
  - [airdock/oracle-jdk:jdk-8u60](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u60) [![](https://badge.imagelayers.io/airdock/oracle-jdk:jdk-8u60.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:jdk-8u60 'Get your own badge on imagelayers.io')
@@ -30,6 +33,9 @@ This repository contains **Dockerfile** for [Docker](https://www.docker.com/)'s 
  - [airdock/oracle-jdk:jdk-8u25](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u25) [![](https://badge.imagelayers.io/airdock/oracle-jdk:jdk-8u25.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:jdk-8u25 'Get your own badge on imagelayers.io')
  - [airdock/oracle-jdk:jdk-7u80](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-7u80) [![](https://badge.imagelayers.io/airdock/oracle-jdk:jdk-7u80.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:jdk-7u80 'Get your own badge on imagelayers.io')
  - [airdock/oracle-jdk:jdk-7u79](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-7u79) [![](https://badge.imagelayers.io/airdock/oracle-jdk:jdk-7u79.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:jdk-7u79 'Get your own badge on imagelayers.io')
+ - [airdock/oracle-jdk:jre-8u66](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jre-8u66) [![](https://badge.imagelayers.io/airdock/oracle-jdk:jre-8u66.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:jre-8u66 'Get your own badge on imagelayers.io')
+ - [airdock/oracle-jdk:jre-8u65](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jre-8u65) [![](https://badge.imagelayers.io/airdock/oracle-jdk:jre-8u65.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:jre-8u65 'Get your own badge on imagelayers.io')
+ - [airdock/oracle-jdk:jre-7u80](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jre-7u80) [![](https://badge.imagelayers.io/airdock/oracle-jdk:jre-7u80.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:jre-7u80 'Get your own badge on imagelayers.io')
 
 
 
@@ -44,29 +50,35 @@ Execute:
 Please note that a correct docker command should be something like this one (using java user defined):
 
 ```
- CMD [ "gosu", "java:java", "/srv/java/jdk/bin/java", ... ]
+ CMD [ "gosu", "java:java", "/srv/java/jvm/bin/java", ... ]
 ```
 
-JVM uses only 1/4 of system memory by default, with script java-dynamic-memory-opts, 
+JVM uses only 1/4 of system memory by default, with script java-dynamic-memory-opts,
 you could set a specific percent of memory (80 % per default) :
 
 ```
- CMD [ "gosu", "java:java", "/srv/java/jdk/bin/java", "$(/srv/java/java-dynamic-memory-opts)", ... ]
+ CMD [ "gosu", "java:java", "/srv/java/jvm/bin/java", "$(/srv/java/java-dynamic-memory-opts)", ... ]
  or
- CMD [ "gosu", "java:java", "/srv/java/jdk/bin/java", "$(/srv/java/java-dynamic-memory-opts 90)", ... ]
+ CMD [ "gosu", "java:java", "/srv/java/jvm/bin/java", "$(/srv/java/java-dynamic-memory-opts 90)", ... ]
 ```
 If you using this script take care of your host sizing.
 
 
 ## Change Log
 
+### 1.2
+
+- add JRE version
+- JAVA HOME is bellow /srv/java/jdk or /srv/java/jre
+- add shorlink /srv/java/jvm to simplify command line and absolute path
+
 ### 1.1
 
 - add specific tag on SDK version
-- add build process to generate all JDK version target 
+- add build process to generate all JDK version target
 - add JAVA_HOME/bin in PATH, java-dynamic-memory-opts utility script for all version
 - Use tarball from Oracle in order to install JDK
-- JDK HOME is bellow /srv/java/jdk
+- JAVA HOME is bellow /srv/java/jdk
 
 ### 1.0
 

@@ -1,5 +1,4 @@
 #!/bin/sh
-
 # example usage: 
 # exec java $(java-dynamic-memory-opts 80) -jar myfatjar.jar
 
