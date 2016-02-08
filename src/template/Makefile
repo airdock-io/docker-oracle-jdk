@@ -1,7 +1,7 @@
 NAMESPACE = %NAMESPACE%
 NAME = %NAME%
 FULLNAME = $(NAMESPACE)/$(NAME)
-VERSION = %VERSION%
+VERSION = %FOLDER%
 
 .PHONY: all clean build tag_latest release debug run save start usage
 
