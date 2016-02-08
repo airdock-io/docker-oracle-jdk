@@ -7,7 +7,7 @@ MAINTAINER Jerome Guibert <jguibert@gmail.com>
 # Add java dynamic memory script
 COPY java-dynamic-memory-opts /srv/java/
 
-# Install Oracle JDK 7u80-b15/jre-7u80
+# Install Oracle JDK 7u80
 RUN cd /tmp && \
     curl -L -O -H "Cookie: oraclelicense=accept-securebackup-cookie" -k "http://download.oracle.com/otn-pub/java/jdk/7u80-b15/jre-7u80-linux-x64.tar.gz" && \
     tar xf jre-7u80-linux-x64.tar.gz -C /srv/java && \

@@ -1,0 +1,6 @@
+.git
+.idea
+*.md
+Makefile
+LICENSE
+src
