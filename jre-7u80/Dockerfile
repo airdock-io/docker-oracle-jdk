@@ -13,7 +13,7 @@ RUN cd /tmp && \
     tar xf jre-7u80-linux-x64.tar.gz -C /srv/java && \
     rm -f jre-7u80-linux-x64.tar.gz && \
     ln -s /srv/java/jre* /srv/java/jre && \
-    ln -s /srv/java/%PREFIX /srv/java/jvm && \
+    ln -s /srv/java/jre /srv/java/jvm && \
     chown -R java:java /srv/java && \
     /root/post-install
 

@@ -13,7 +13,7 @@ RUN cd /tmp && \
     tar xf %FOLDER%-linux-x64.tar.gz -C /srv/java && \
     rm -f %FOLDER%-linux-x64.tar.gz && \
     ln -s /srv/java/%PREFIX%* /srv/java/%PREFIX% && \
-    ln -s /srv/java/%PREFIX /srv/java/jvm && \
+    ln -s /srv/java/%PREFIX% /srv/java/jvm && \
     chown -R java:java /srv/java && \
     /root/post-install
 
