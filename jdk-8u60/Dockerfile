@@ -13,7 +13,7 @@ RUN cd /tmp && \
     tar xf jdk-8u60-linux-x64.tar.gz -C /srv/java && \
     rm -f jdk-8u60-linux-x64.tar.gz && \
     ln -s /srv/java/jdk* /srv/java/jdk && \
-    ln -s /srv/java/%PREFIX /srv/java/jvm && \
+    ln -s /srv/java/jdk /srv/java/jvm && \
     chown -R java:java /srv/java && \
     /root/post-install
 
