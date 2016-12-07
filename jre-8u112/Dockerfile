@@ -9,7 +9,7 @@ COPY java-dynamic-memory-opts /srv/java/
 
 # Install Oracle JDK 8u11
 RUN cd /tmp && \
-    curl -L -O -H "Cookie: oraclelicense=accept-securebackup-cookie" -k "http://download.oracle.com/otn-pub/java/jdk/8u112-B15/jre-8u112-linux-x64.tar.gz" && \
+    curl -L -O -H "Cookie: oraclelicense=accept-securebackup-cookie" -k "http://download.oracle.com/otn-pub/java/jdk/8u112-b15/jre-8u112-linux-x64.tar.gz" && \
     tar xf jre-8u112-linux-x64.tar.gz -C /srv/java && \
     rm -f jre-8u112-linux-x64.tar.gz && \
     ln -s /srv/java/jre* /srv/java/jre && \
