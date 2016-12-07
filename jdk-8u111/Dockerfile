@@ -1,5 +1,5 @@
-# DESCRIPTION:    Oracle Java jdk-8u112
-# SOURCE:         https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u112
+# DESCRIPTION:    Oracle Java jdk-8u111
+# SOURCE:         https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u111
 
 FROM airdock/base:latest
 MAINTAINER Jerome Guibert <jguibert@gmail.com>
@@ -9,9 +9,9 @@ COPY java-dynamic-memory-opts /srv/java/
 
 # Install Oracle JDK 8u11
 RUN cd /tmp && \
-    curl -L -O -H "Cookie: oraclelicense=accept-securebackup-cookie" -k "http://download.oracle.com/otn-pub/java/jdk/8u112-B15/jdk-8u112-linux-x64.tar.gz" && \
-    tar xf jdk-8u112-linux-x64.tar.gz -C /srv/java && \
-    rm -f jdk-8u112-linux-x64.tar.gz && \
+    curl -L -O -H "Cookie: oraclelicense=accept-securebackup-cookie" -k "http://download.oracle.com/otn-pub/java/jdk/8u111-B14/jdk-8u111-linux-x64.tar.gz" && \
+    tar xf jdk-8u111-linux-x64.tar.gz -C /srv/java && \
+    rm -f jdk-8u111-linux-x64.tar.gz && \
     ln -s /srv/java/jdk* /srv/java/jdk && \
     ln -s /srv/java/jdk /srv/java/jvm && \
     chown -R java:java /srv/java && \
