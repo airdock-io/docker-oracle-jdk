@@ -1,20 +1,20 @@
 #!/bin/bash
 
 # supported version
-JDK_VERSION_LIST="8u74-b02/jdk-8u74 8u72-b15/jdk-8u72 \
+JDK_VERSION_LIST="8u112-b15/jdk-8u112 8u111-b14/jdk-8u111 8u74-b02/jdk-8u74 8u72-b15/jdk-8u72 \
   8u66-b17/jdk-8u66 8u65-b17/jdk-8u65 8u60-b27/jdk-8u60 \
 	8u51-b16/jdk-8u51 \
 	8u45-b14/jdk-8u45 8u40-b25/jdk-8u40 8u31-b13/jdk-8u31 8u25-b17/jdk-8u25 \
 	7u80-b15/jdk-7u80 7u79-b15/jdk-7u79 \
 	"
-JRE_VERSION_LIST="8u74-b02/jre-8u74 8u66-b17/jre-8u66 8u65-b17/jre-8u65 \
+JRE_VERSION_LIST="8u112-b15/jre-8u112 8u111-b14/jre-8u111 8u74-b02/jre-8u74 8u66-b17/jre-8u66 8u65-b17/jre-8u65 \
 	7u80-b15/jre-7u80 \
 	"
 
 # special tag
-LATEST_VERSION="jdk-8u74"
-TAG_JDK_8="jdk-8u74"
-TAG_JRE_8="jre-8u74"
+LATEST_VERSION="jdk-8u112"
+TAG_JDK_8="jdk-8u112"
+TAG_JRE_8="jre-8u112"
 TAG_JDK_7="jdk-7u80"
 TAG_JRE_7="jre-7u80"
 
