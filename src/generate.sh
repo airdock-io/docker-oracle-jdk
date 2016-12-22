@@ -25,7 +25,7 @@ NAME="oracle-jdk"
 FULLNAME="$NAMESPACE/$NAME"
 BASE_URL="http://download.oracle.com/otn-pub/java/jdk/"
 PLATFORM="-linux-x64.tar.gz"
-
+GIT_PROJECT="https://github.com/airdock-io/docker-oracle-jdk/tree/master/"
 # Basic variable
 ROOT_DIR=${PWD}
 BUILD_DIR=$ROOT_DIR/../build
@@ -73,28 +73,34 @@ generate() {
      done;
 }
 
+generateBadge() {
+  tag=$1
+  echo "[![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:${tag}.svg)](https://microbadger.com/images/airdock/oracle-jdk:${tag} 'Get your own image badge on microbadger.com')"
+}
 # generate readme content
 generateReadMe() {
     readme=""
     NL="NEWLINE"
     # special tag
-    readme="${readme} > [${FULLNAME}:latest](https://github.com/airdock-io/docker-oracle-jdk/tree/master/) (${LATEST_VERSION}) [![](https://badge.imagelayers.io/airdock/oracle-jdk:latest.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:latest 'Get your own badge on imagelayers.io')${NL}${NL}"
+
+
+    readme="${readme} > [${FULLNAME}:latest](${GIT_PROJECT}) (${LATEST_VERSION}) $(generateBadge latest)${NL}${NL}"
     readme="${readme}###Latest tag per version and type${NL}"
-		readme="${readme} - [${FULLNAME}:1.8](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-1.8) (${TAG_JDK_8}) [![](https://badge.imagelayers.io/airdock/oracle-jdk:1.8.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:1.8 'Get your own badge on imagelayers.io')${NL}"
-		readme="${readme} - [${FULLNAME}:jdk-1.8](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-1.8) (${TAG_JDK_8}) [![](https://badge.imagelayers.io/airdock/oracle-jdk:jdk-1.8.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:jdk-1.8 'Get your own badge on imagelayers.io')${NL}"
-		readme="${readme} - [${FULLNAME}:jre-1.8](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jre-1.8) (${TAG_JRE_8}) [![](https://badge.imagelayers.io/airdock/oracle-jdk:jre-1.8.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:jre-1.8 'Get your own badge on imagelayers.io')${NL}"
-    readme="${readme} - [${FULLNAME}:1.7](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-1.7) (${TAG_JDK_8}) [![](https://badge.imagelayers.io/airdock/oracle-jdk:1.7.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:1.7 'Get your own badge on imagelayers.io')${NL}"
-		readme="${readme} - [${FULLNAME}:jdk-1.7](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-1.7) (${TAG_JDK_7}) [![](https://badge.imagelayers.io/airdock/oracle-jdk:jdk-1.7.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:jdk-1.7 'Get your own badge on imagelayers.io')${NL}"
-		readme="${readme} - [${FULLNAME}:jre-1.7](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jre-1.7) (${TAG_JRE_7}) [![](https://badge.imagelayers.io/airdock/oracle-jdk:jre-1.7.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:jre-1.7 'Get your own badge on imagelayers.io')${NL}${NL}${NL}"
+		readme="${readme} - [${FULLNAME}:1.8](${GIT_PROJECT}jdk-1.8) (${TAG_JDK_8}) $(generateBadge ${TAG_JDK_8}) ${NL} "
+		readme="${readme} - [${FULLNAME}:jdk-1.8](${GIT_PROJECT}jdk-1.8) (${TAG_JDK_8}) $(generateBadge ${TAG_JDK_8}) ${NL}"
+		readme="${readme} - [${FULLNAME}:jre-1.8](${GIT_PROJECT}jre-1.8) (${TAG_JRE_8}) $(generateBadge ${TAG_JRE_8}) ${NL}"
+    readme="${readme} - [${FULLNAME}:1.7](${GIT_PROJECT}jdk-1.7) (${TAG_JDK_8}) $(generateBadge ${TAG_JDK_8}) ${NL}"
+		readme="${readme} - [${FULLNAME}:jdk-1.7](${GIT_PROJECT}jdk-1.7) (${TAG_JDK_7}) $(generateBadge ${TAG_JDK_7}) ${NL}"
+		readme="${readme} - [${FULLNAME}:jre-1.7](${GIT_PROJECT}jre-1.7) (${TAG_JRE_7}) $(generateBadge ${TAG_JRE_7}) ${NL}${NL}${NL}"
 		readme="${readme}###Specific version${NL}"
 		# Version
     for supported_version in $JDK_VERSION_LIST; do
         folder=$(basename $supported_version)
-        readme="${readme} - [${FULLNAME}:${folder}](https://github.com/airdock-io/docker-oracle-jdk/tree/master/${folder}) [![](https://badge.imagelayers.io/airdock/oracle-jdk:${folder}.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:${folder} 'Get your own badge on imagelayers.io')${NL}"
+        readme="${readme} - [${FULLNAME}:${folder}](${GIT_PROJECT}${folder}) $(generateBadge ${folder}) ${NL}"
     done;
 		for supported_version in $JRE_VERSION_LIST; do
 				folder=$(basename $supported_version)
-				readme="${readme} - [${FULLNAME}:${folder}](https://github.com/airdock-io/docker-oracle-jdk/tree/master/${folder}) [![](https://badge.imagelayers.io/airdock/oracle-jdk:${folder}.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:${folder} 'Get your own badge on imagelayers.io')${NL}"
+				readme="${readme} - [${FULLNAME}:${folder}](${GIT_PROJECT}${folder}) $(generateBadge ${folder}) ${NL}"
 		done;
     sed -e "s;%README_VERSION%;$readme;g" -e "s;NEWLINE;\n;g" ${SRC_DIR}/README.md > ${BUILD_DIR}/README.md
 }

@@ -1,7 +1,7 @@
 # DESCRIPTION:    Oracle Java %FOLDER%
 # SOURCE:         https://github.com/airdock-io/docker-oracle-jdk/tree/master/%FOLDER%
 
-FROM airdock/base:latest
+FROM airdock/base:jessie
 MAINTAINER Jerome Guibert <jguibert@gmail.com>
 
 # Add java dynamic memory script
