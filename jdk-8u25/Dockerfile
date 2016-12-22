@@ -1,7 +1,7 @@
 # DESCRIPTION:    Oracle Java jdk-8u25
 # SOURCE:         https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u25
 
-FROM airdock/base:latest
+FROM airdock/base:jessie
 MAINTAINER Jerome Guibert <jguibert@gmail.com>
 
 # Add java dynamic memory script

@@ -1,11 +1,10 @@
-# Oracle Java [![](https://badge.imagelayers.io/airdock/oracle-jdk:latest.svg)](https://imagelayers.io/?images=airdock/oracle-jdk:latest 'Get your own badge on imagelayers.io')
+# Oracle Java [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:latest.svg)](https://microbadger.com/images/airdock/oracle-jdk:latest "Get your own image badge on microbadger.com")
 
-
-Docker Image for Oracle Java SDK (JDK and JRE) based on airdock/base:latest
+Docker Image for Oracle Java SDK (JDK and JRE) based on airdock/base:jessie
 
 This repository contains **Dockerfile** for [Docker](https://www.docker.com/)'s [automated build](https://registry.hub.docker.com/u/airdock/) published to the public [Docker Hub Registry](https://registry.hub.docker.com/).
 
-**Dependency**: airdock/base:latest
+**Dependency**: airdock/base:jessie
 
 **Few links**:
 
@@ -42,6 +41,10 @@ If you using this script take care of your host sizing.
 
 
 ## Change Log
+
+### latest
+- update image layer badge
+- fix root image to airdock/base:jessie
 
 ### 1.2
 

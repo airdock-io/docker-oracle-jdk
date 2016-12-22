@@ -1,7 +1,7 @@
 # DESCRIPTION:    Oracle Java jre-8u66
 # SOURCE:         https://github.com/airdock-io/docker-oracle-jdk/tree/master/jre-8u66
 
-FROM airdock/base:latest
+FROM airdock/base:jessie
 MAINTAINER Jerome Guibert <jguibert@gmail.com>
 
 # Add java dynamic memory script
