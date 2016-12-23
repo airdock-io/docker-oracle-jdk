@@ -18,7 +18,6 @@ RUN cd /tmp && \
     /root/post-install
 
 # Define commonly used JAVA_HOME variable
-ENV JAVA_HOME /srv/java/jre
-
 # Add /srv/java and jdk on PATH variable
-ENV PATH ${PATH}:${JAVA_HOME}/bin:/srv/java
+ENV JAVA_HOME=/srv/java/jre \
+    PATH=${PATH}:${JAVA_HOME}/bin:/srv/java
