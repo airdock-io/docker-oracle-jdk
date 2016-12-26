@@ -20,4 +20,4 @@ RUN cd /tmp && \
 # Define commonly used JAVA_HOME variable
 # Add /srv/java and jdk on PATH variable
 ENV JAVA_HOME=/srv/java/jre \
-    PATH=${PATH}:${JAVA_HOME}/bin:/srv/java
+    PATH=${PATH}:/srv/java/jre/bin:/srv/java
