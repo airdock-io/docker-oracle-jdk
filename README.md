@@ -1,5 +1,6 @@
 # Oracle Java [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:latest.svg)](https://microbadger.com/images/airdock/oracle-jdk:latest "Get your own image badge on microbadger.com")
 
+
 Docker Image for Oracle Java SDK (JDK and JRE) based on airdock/base:jessie
 
 This repository contains **Dockerfile** for [Docker](https://www.docker.com/)'s [automated build](https://registry.hub.docker.com/u/airdock/) published to the public [Docker Hub Registry](https://registry.hub.docker.com/).
@@ -10,40 +11,11 @@ This repository contains **Dockerfile** for [Docker](https://www.docker.com/)'s 
 
  - [Docker Java Image](https://github.com/dockerfile/java)
 
-## Supported Version
+## Supported Version and tag
 
- > [airdock/oracle-jdk:latest](https://github.com/airdock-io/docker-oracle-jdk/tree/master/) (jdk-8u112) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:latest.svg)](https://microbadger.com/images/airdock/oracle-jdk:latest 'Get your own image badge on microbadger.com')
+ > [airdock/oracle-jdk:latest](https://github.com/airdock-io/docker-oracle-jdk/tree/master/) (jdk-8u201) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:latest.svg)](https://microbadger.com/images/airdock/oracle-jdk:latest 'Get your own image badge on microbadger.com')
 
-###Latest tag per version and type
- - [airdock/oracle-jdk:1.8](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-1.8) (jdk-8u112) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jdk-8u112.svg)](https://microbadger.com/images/airdock/oracle-jdk:jdk-8u112 'Get your own image badge on microbadger.com') 
-  - [airdock/oracle-jdk:jdk-1.8](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-1.8) (jdk-8u112) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jdk-8u112.svg)](https://microbadger.com/images/airdock/oracle-jdk:jdk-8u112 'Get your own image badge on microbadger.com') 
- - [airdock/oracle-jdk:jre-1.8](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jre-1.8) (jre-8u112) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jre-8u112.svg)](https://microbadger.com/images/airdock/oracle-jdk:jre-8u112 'Get your own image badge on microbadger.com') 
- - [airdock/oracle-jdk:1.7](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-1.7) (jdk-8u112) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jdk-8u112.svg)](https://microbadger.com/images/airdock/oracle-jdk:jdk-8u112 'Get your own image badge on microbadger.com') 
- - [airdock/oracle-jdk:jdk-1.7](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-1.7) (jdk-7u80) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jdk-7u80.svg)](https://microbadger.com/images/airdock/oracle-jdk:jdk-7u80 'Get your own image badge on microbadger.com') 
- - [airdock/oracle-jdk:jre-1.7](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jre-1.7) (jre-7u80) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jre-7u80.svg)](https://microbadger.com/images/airdock/oracle-jdk:jre-7u80 'Get your own image badge on microbadger.com') 
-
-
-###Specific version
- - [airdock/oracle-jdk:jdk-8u112](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u112) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jdk-8u112.svg)](https://microbadger.com/images/airdock/oracle-jdk:jdk-8u112 'Get your own image badge on microbadger.com') 
- - [airdock/oracle-jdk:jdk-8u111](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u111) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jdk-8u111.svg)](https://microbadger.com/images/airdock/oracle-jdk:jdk-8u111 'Get your own image badge on microbadger.com') 
- - [airdock/oracle-jdk:jdk-8u74](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u74) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jdk-8u74.svg)](https://microbadger.com/images/airdock/oracle-jdk:jdk-8u74 'Get your own image badge on microbadger.com') 
- - [airdock/oracle-jdk:jdk-8u72](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u72) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jdk-8u72.svg)](https://microbadger.com/images/airdock/oracle-jdk:jdk-8u72 'Get your own image badge on microbadger.com') 
- - [airdock/oracle-jdk:jdk-8u66](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u66) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jdk-8u66.svg)](https://microbadger.com/images/airdock/oracle-jdk:jdk-8u66 'Get your own image badge on microbadger.com') 
- - [airdock/oracle-jdk:jdk-8u65](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u65) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jdk-8u65.svg)](https://microbadger.com/images/airdock/oracle-jdk:jdk-8u65 'Get your own image badge on microbadger.com') 
- - [airdock/oracle-jdk:jdk-8u60](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u60) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jdk-8u60.svg)](https://microbadger.com/images/airdock/oracle-jdk:jdk-8u60 'Get your own image badge on microbadger.com') 
- - [airdock/oracle-jdk:jdk-8u51](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u51) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jdk-8u51.svg)](https://microbadger.com/images/airdock/oracle-jdk:jdk-8u51 'Get your own image badge on microbadger.com') 
- - [airdock/oracle-jdk:jdk-8u45](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u45) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jdk-8u45.svg)](https://microbadger.com/images/airdock/oracle-jdk:jdk-8u45 'Get your own image badge on microbadger.com') 
- - [airdock/oracle-jdk:jdk-8u40](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u40) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jdk-8u40.svg)](https://microbadger.com/images/airdock/oracle-jdk:jdk-8u40 'Get your own image badge on microbadger.com') 
- - [airdock/oracle-jdk:jdk-8u31](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u31) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jdk-8u31.svg)](https://microbadger.com/images/airdock/oracle-jdk:jdk-8u31 'Get your own image badge on microbadger.com') 
- - [airdock/oracle-jdk:jdk-8u25](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u25) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jdk-8u25.svg)](https://microbadger.com/images/airdock/oracle-jdk:jdk-8u25 'Get your own image badge on microbadger.com') 
- - [airdock/oracle-jdk:jdk-7u80](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-7u80) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jdk-7u80.svg)](https://microbadger.com/images/airdock/oracle-jdk:jdk-7u80 'Get your own image badge on microbadger.com') 
- - [airdock/oracle-jdk:jdk-7u79](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-7u79) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jdk-7u79.svg)](https://microbadger.com/images/airdock/oracle-jdk:jdk-7u79 'Get your own image badge on microbadger.com') 
- - [airdock/oracle-jdk:jre-8u112](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jre-8u112) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jre-8u112.svg)](https://microbadger.com/images/airdock/oracle-jdk:jre-8u112 'Get your own image badge on microbadger.com') 
- - [airdock/oracle-jdk:jre-8u111](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jre-8u111) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jre-8u111.svg)](https://microbadger.com/images/airdock/oracle-jdk:jre-8u111 'Get your own image badge on microbadger.com') 
- - [airdock/oracle-jdk:jre-8u74](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jre-8u74) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jre-8u74.svg)](https://microbadger.com/images/airdock/oracle-jdk:jre-8u74 'Get your own image badge on microbadger.com') 
- - [airdock/oracle-jdk:jre-8u66](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jre-8u66) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jre-8u66.svg)](https://microbadger.com/images/airdock/oracle-jdk:jre-8u66 'Get your own image badge on microbadger.com') 
- - [airdock/oracle-jdk:jre-8u65](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jre-8u65) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jre-8u65.svg)](https://microbadger.com/images/airdock/oracle-jdk:jre-8u65 'Get your own image badge on microbadger.com') 
- - [airdock/oracle-jdk:jre-7u80](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jre-7u80) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jre-7u80.svg)](https://microbadger.com/images/airdock/oracle-jdk:jre-7u80 'Get your own image badge on microbadger.com') 
+ > [airdock/oracle-jdk:1.8](https://github.com/airdock-io/docker-oracle-jdk/tree/master/) (jdk-8u201) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:latest.svg)](https://microbadger.com/images/airdock/oracle-jdk:latest 'Get your own image badge on microbadger.com')
 
 
 
@@ -74,7 +46,9 @@ If you using this script take care of your host sizing.
 
 ## Change Log
 
+
 ### latest
+- suppory only JDK 1.8 for now (more later)
 - update image layer badge
 - fix root image to airdock/base:jessie
 
@@ -118,6 +92,43 @@ Under each project, you could retrieve a Makefile with a set of *tasks*:
 - **save**: export docker image as a tar.gz file
 
 See [Docker Project Tree](https://github.com/airdock-io/docker-base/wiki/Docker-Project-Tree) for more details.
+
+## Hall of death
+
+All this tags have disappears from docker hub on 2019/01/23 (...).
+
+
+###Latest tag per version and type
+ - [airdock/oracle-jdk:1.8](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-1.8) (jdk-8u112) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jdk-8u112.svg)](https://microbadger.com/images/airdock/oracle-jdk:jdk-8u112 'Get your own image badge on microbadger.com') 
+  - [airdock/oracle-jdk:jdk-1.8](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-1.8) (jdk-8u112) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jdk-8u112.svg)](https://microbadger.com/images/airdock/oracle-jdk:jdk-8u112 'Get your own image badge on microbadger.com') 
+ - [airdock/oracle-jdk:jre-1.8](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jre-1.8) (jre-8u112) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jre-8u112.svg)](https://microbadger.com/images/airdock/oracle-jdk:jre-8u112 'Get your own image badge on microbadger.com') 
+ - [airdock/oracle-jdk:1.7](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-1.7) (jdk-8u112) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jdk-8u112.svg)](https://microbadger.com/images/airdock/oracle-jdk:jdk-8u112 'Get your own image badge on microbadger.com') 
+ - [airdock/oracle-jdk:jdk-1.7](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-1.7) (jdk-7u80) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jdk-7u80.svg)](https://microbadger.com/images/airdock/oracle-jdk:jdk-7u80 'Get your own image badge on microbadger.com') 
+ - [airdock/oracle-jdk:jre-1.7](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jre-1.7) (jre-7u80) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jre-7u80.svg)](https://microbadger.com/images/airdock/oracle-jdk:jre-7u80 'Get your own image badge on microbadger.com') 
+
+
+###Specific version
+ - [airdock/oracle-jdk:jdk-8u112](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u112) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jdk-8u112.svg)](https://microbadger.com/images/airdock/oracle-jdk:jdk-8u112 'Get your own image badge on microbadger.com') 
+ - [airdock/oracle-jdk:jdk-8u111](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u111) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jdk-8u111.svg)](https://microbadger.com/images/airdock/oracle-jdk:jdk-8u111 'Get your own image badge on microbadger.com') 
+ - [airdock/oracle-jdk:jdk-8u74](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u74) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jdk-8u74.svg)](https://microbadger.com/images/airdock/oracle-jdk:jdk-8u74 'Get your own image badge on microbadger.com') 
+ - [airdock/oracle-jdk:jdk-8u72](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u72) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jdk-8u72.svg)](https://microbadger.com/images/airdock/oracle-jdk:jdk-8u72 'Get your own image badge on microbadger.com') 
+ - [airdock/oracle-jdk:jdk-8u66](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u66) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jdk-8u66.svg)](https://microbadger.com/images/airdock/oracle-jdk:jdk-8u66 'Get your own image badge on microbadger.com') 
+ - [airdock/oracle-jdk:jdk-8u65](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u65) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jdk-8u65.svg)](https://microbadger.com/images/airdock/oracle-jdk:jdk-8u65 'Get your own image badge on microbadger.com') 
+ - [airdock/oracle-jdk:jdk-8u60](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u60) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jdk-8u60.svg)](https://microbadger.com/images/airdock/oracle-jdk:jdk-8u60 'Get your own image badge on microbadger.com') 
+ - [airdock/oracle-jdk:jdk-8u51](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u51) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jdk-8u51.svg)](https://microbadger.com/images/airdock/oracle-jdk:jdk-8u51 'Get your own image badge on microbadger.com') 
+ - [airdock/oracle-jdk:jdk-8u45](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u45) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jdk-8u45.svg)](https://microbadger.com/images/airdock/oracle-jdk:jdk-8u45 'Get your own image badge on microbadger.com') 
+ - [airdock/oracle-jdk:jdk-8u40](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u40) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jdk-8u40.svg)](https://microbadger.com/images/airdock/oracle-jdk:jdk-8u40 'Get your own image badge on microbadger.com') 
+ - [airdock/oracle-jdk:jdk-8u31](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u31) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jdk-8u31.svg)](https://microbadger.com/images/airdock/oracle-jdk:jdk-8u31 'Get your own image badge on microbadger.com') 
+ - [airdock/oracle-jdk:jdk-8u25](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-8u25) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jdk-8u25.svg)](https://microbadger.com/images/airdock/oracle-jdk:jdk-8u25 'Get your own image badge on microbadger.com') 
+ - [airdock/oracle-jdk:jdk-7u80](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-7u80) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jdk-7u80.svg)](https://microbadger.com/images/airdock/oracle-jdk:jdk-7u80 'Get your own image badge on microbadger.com') 
+ - [airdock/oracle-jdk:jdk-7u79](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jdk-7u79) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jdk-7u79.svg)](https://microbadger.com/images/airdock/oracle-jdk:jdk-7u79 'Get your own image badge on microbadger.com') 
+ - [airdock/oracle-jdk:jre-8u112](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jre-8u112) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jre-8u112.svg)](https://microbadger.com/images/airdock/oracle-jdk:jre-8u112 'Get your own image badge on microbadger.com') 
+ - [airdock/oracle-jdk:jre-8u111](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jre-8u111) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jre-8u111.svg)](https://microbadger.com/images/airdock/oracle-jdk:jre-8u111 'Get your own image badge on microbadger.com') 
+ - [airdock/oracle-jdk:jre-8u74](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jre-8u74) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jre-8u74.svg)](https://microbadger.com/images/airdock/oracle-jdk:jre-8u74 'Get your own image badge on microbadger.com') 
+ - [airdock/oracle-jdk:jre-8u66](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jre-8u66) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jre-8u66.svg)](https://microbadger.com/images/airdock/oracle-jdk:jre-8u66 'Get your own image badge on microbadger.com') 
+ - [airdock/oracle-jdk:jre-8u65](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jre-8u65) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jre-8u65.svg)](https://microbadger.com/images/airdock/oracle-jdk:jre-8u65 'Get your own image badge on microbadger.com') 
+ - [airdock/oracle-jdk:jre-7u80](https://github.com/airdock-io/docker-oracle-jdk/tree/master/jre-7u80) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:jre-7u80.svg)](https://microbadger.com/images/airdock/oracle-jdk:jre-7u80 'Get your own image badge on microbadger.com') 
+
 
 
 ## MIT License
