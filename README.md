@@ -1,4 +1,10 @@
-# Oracle Java [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:latest.svg)](https://microbadger.com/images/airdock/oracle-jdk:latest "Get your own image badge on microbadger.com")
+# Oracle Java [![](https://images.microbadger.com/badges/image/airdock/oraclejdk:latest.svg)](https://microbadger.com/images/airdock/oraclejdk:latest "Get your own image badge on microbadger.com")
+
+
+Due to a big bug, we could not continue to use oracle-jdk as image name.
+In a quick (and dirty...) solution we have renamed image name to 'oraclejdk'
+
+We hope that could be an acceptable solution for a better one later.
 
 
 Docker Image for Oracle Java SDK (JDK and JRE) based on airdock/base:jessie
@@ -13,9 +19,9 @@ This repository contains **Dockerfile** for [Docker](https://www.docker.com/)'s 
 
 ## Supported Version and tag
 
- > [airdock/oracle-jdk:latest](https://github.com/airdock-io/docker-oracle-jdk/tree/master/) (jdk-8u201) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:latest.svg)](https://microbadger.com/images/airdock/oracle-jdk:latest 'Get your own image badge on microbadger.com')
+ > [airdock/oraclejdk:latest](https://github.com/airdock-io/docker-oraclejdk/tree/master/) (jdk-8u201) [![](https://images.microbadger.com/badges/image/airdock/oraclejdk:latest.svg)](https://microbadger.com/images/airdock/oraclejdk:latest 'Get your own image badge on microbadger.com')
 
- > [airdock/oracle-jdk:1.8](https://github.com/airdock-io/docker-oracle-jdk/tree/master/) (jdk-8u201) [![](https://images.microbadger.com/badges/image/airdock/oracle-jdk:latest.svg)](https://microbadger.com/images/airdock/oracle-jdk:latest 'Get your own image badge on microbadger.com')
+ > [airdock/oraclejdk:1.8](https://github.com/airdock-io/docker-oraclejdk/tree/master/) (jdk-8u201) [![](https://images.microbadger.com/badges/image/airdock/oraclejdk:latest.svg)](https://microbadger.com/images/airdock/oraclejdk:latest 'Get your own image badge on microbadger.com')
 
 
 
@@ -25,7 +31,7 @@ You should have already install [Docker](https://www.docker.com/).
 
 Execute:
 
-	'docker run -t -i  airdock/oracle-jdk:latest java -version'
+	'docker run -t -i  airdock/oraclejdk:latest java -version'
 
 Please note that a correct docker command should be something like this one (using java user defined):
 
